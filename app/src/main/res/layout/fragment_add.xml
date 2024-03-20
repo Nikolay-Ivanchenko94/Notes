@@ -5,29 +5,30 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/notes"
-    tools:context=".fragment.MainFragment">
+    tools:context=".fragment.AddFragment">
 
 
-    <TextView
-        android:id="@+id/tvNotes"
-        android:layout_width="115dp"
-        android:layout_height="59dp"
-        android:text="NOTES "
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="47dp"
-        tools:ignore="MissingConstraints" />
+<TextView
+    android:layout_width="115dp"
+    android:layout_height="59dp"
+    android:id="@+id/tvNotes"
+    android:text="NOTES"
+    android:textColor="@color/white"
+    android:textSize="24sp"
+    tools:layout_editor_absoluteX="24dp"
+    tools:layout_editor_absoluteY="47dp"
+    tools:ignore="MissingConstraints" />
 
 
-    <ImageView
-        android:id="@+id/ivNotes"
-        android:layout_width="350dp"
-        android:layout_height="286.73dp"
-        android:background="@drawable/drawable_icon"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="243dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rvNotes"
+        app:layout_constraintTop_toBottomOf="@+id/rvNotes"
+        android:layout_marginTop="110dp"
+        tools:ignore="NotSibling,UnknownId"/>
+
 
     <Button
         android:id="@+id/btnAdd"
@@ -40,6 +41,11 @@
         tools:layout_editor_absoluteX="303dp"
         tools:layout_editor_absoluteY="624dp"
         tools:ignore="MissingConstraints" />
+
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
