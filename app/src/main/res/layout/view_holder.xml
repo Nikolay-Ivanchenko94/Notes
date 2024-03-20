@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="80dp"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="20.03.2024 19:00"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/tvTime"
+        tools:ignore="HardcodedText,MissingConstraints,NotSibling,RtlHardcoded"
+        tools:layout_editor_absoluteY="23dp" />
+
+
+    <TextView
+        android:id="@+id/tvListProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:text="Список Продуктів"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/tvTime"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteY="23dp" />
+
+    <Button
+        android:id="@+id/btnDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/down"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="505dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
