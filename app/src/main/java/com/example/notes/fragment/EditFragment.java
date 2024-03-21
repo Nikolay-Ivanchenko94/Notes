@@ -9,28 +9,29 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.notes.R;
-import com.example.notes.databinding.FragmentMainBinding;
+import com.example.notes.databinding.FragmentAddBinding;
+import com.example.notes.databinding.FragmentEditBinding;
 
 
-public class MainFragment extends Fragment {
+public class EditFragment extends Fragment {
 
+    private FragmentEditBinding binding;
 
-    private FragmentMainBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentMainBinding.inflate(inflater,container,false);
+        binding = FragmentEditBinding.inflate(inflater,container,false);
 
 
-        binding.btnMain.setOnClickListener(v -> {
+        binding.btnBack.setOnClickListener(v -> {
+
             AddFragment addFragment = new AddFragment();
             getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container,addFragment,"findThisFragment")
                     .addToBackStack(null).commit();
+
+
         });
-
-
-
         return binding.getRoot();
     }
 }

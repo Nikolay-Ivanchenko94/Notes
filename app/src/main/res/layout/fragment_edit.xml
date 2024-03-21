@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/notes"
+    tools:context=".fragment.EditFragment">
+
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/back"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/btnSave"
+        android:background="@drawable/save_icon"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        tools:layout_editor_absoluteY="17dp"
+        android:layout_marginLeft="310dp"/>
+
+    <EditText
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEdit"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+    <EditText
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEdit2"
+        app:layout_constraintTop_toBottomOf="@+id/etEdit"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <EditText
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEdit3"
+        app:layout_constraintTop_toBottomOf="@+id/etEdit2"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEdit4"
+        app:layout_constraintTop_toBottomOf="@+id/etEdit3"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <EditText
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEdit5"
+        app:layout_constraintTop_toBottomOf="@+id/etEdit4"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+    <EditText
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEdit6"
+        app:layout_constraintTop_toBottomOf="@+id/etEdit5"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <EditText
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEdit7"
+        app:layout_constraintTop_toBottomOf="@+id/etEdit6"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <EditText
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEdit8"
+        app:layout_constraintTop_toBottomOf="@+id/etEdit7"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <EditText
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEdit9"
+        app:layout_constraintTop_toBottomOf="@+id/etEdit8"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <EditText
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEdit10"
+        app:layout_constraintTop_toBottomOf="@+id/etEdit9"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

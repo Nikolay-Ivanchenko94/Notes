@@ -4,38 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/container"
     android:background="@drawable/notes"
+    android:id="@+id/container"
     tools:context=".MainActivity">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
-        android:id="@+id/lottie"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:lottie_autoPlay="true"
-        android:transitionName="logo_image"
-        app:layout_constraintVertical_bias="0.19"
-        app:lottie_rawRes="@raw/splach_animation">
-
-    </com.airbnb.lottie.LottieAnimationView>
 
 
-    <TextView
-        android:id="@+id/tvscreen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Notes"
-        android:textColor="@color/white"
-        android:textSize="40sp"
-        android:transitionName="logo_text"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="32dp"
-        android:layout_marginStart="140dp"
-        tools:ignore="HardcodedText,MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

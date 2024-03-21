@@ -7,39 +7,43 @@
     android:background="@drawable/notes"
     tools:context=".fragment.MainFragment">
 
-
     <TextView
-        android:id="@+id/tvNotes"
-        android:layout_width="115dp"
-        android:layout_height="59dp"
-        android:text="NOTES "
+        android:id="@+id/tvMain"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:text="NOTES"
         android:textColor="@color/white"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="47dp"
-        tools:ignore="MissingConstraints" />
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="26dp" />
 
 
     <ImageView
-        android:id="@+id/ivNotes"
-        android:layout_width="350dp"
-        android:layout_height="286.73dp"
+        android:id="@+id/ivMain"
+        android:layout_width="310dp"
+        android:layout_height="286dp"
+        android:layout_marginTop="112dp"
         android:background="@drawable/drawable_icon"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="243dp" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMain" />
     <Button
-        android:id="@+id/btnAdd"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:id="@+id/btnMain"
         android:background="@drawable/background_color"
         android:text="+"
+        android:textSize="50dp"
         android:textColor="@color/white"
-        android:textSize="48dp"
-        tools:layout_editor_absoluteX="303dp"
-        tools:layout_editor_absoluteY="624dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/ivMain"
+        app:layout_constraintStart_toEndOf="@+id/tvMain"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="210dp"/>
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

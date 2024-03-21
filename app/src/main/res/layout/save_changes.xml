@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:layout_width="390dp"
+        android:layout_height="230dp"
+        android:id="@+id/ivSaveChanges"
+        android:background="@drawable/background_color"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="3dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tvSave"
+        android:layout_width="270dp"
+        android:layout_height="90dp"
+        android:text="Save Changes?"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="34dp"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnCancel"
+        android:background="@drawable/background_red"
+        android:text="CANCEL"
+        app:layout_constraintTop_toBottomOf="@+id/tvSave"
+        android:layout_marginTop="40dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnSave"
+        android:background="@drawable/background_green"
+        android:text="SAVE"
+        app:layout_constraintTop_toBottomOf="@+id/tvSave"
+        android:layout_marginTop="40dp"
+        tools:layout_editor_absoluteX="280dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
